@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Imágenes Interactiva</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">Proyecto de Implementación de Sitios Web Dinámicos</p>
+      <h1>Galería de imágenes interactiva</h1>
+      <p class="subtitle">
+        Miniaturas, visor ampliado, navegación entre imágenes y cierre con un solo click.
+      </p>
+    </header>
+
+    <section aria-label="Galería de imágenes" class="gallery-section">
+      <div id="gallery" class="gallery"></div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <button id="closeBtn" class="close-btn" aria-label="Cerrar visor">×</button>
+    <button id="prevBtn" class="nav-btn prev" aria-label="Imagen anterior">‹</button>
+
+    <figure class="lightbox-content" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <img id="lightboxImage" src="" alt="" />
+      <figcaption id="lightboxTitle"></figcaption>
+    </figure>
+
+    <button id="nextBtn" class="nav-btn next" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
